@@ -1,24 +1,5 @@
-# README
+Welcome to AY-Yoga!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a web application that I set up for a client's yoga practice.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Please feel free to reach out to me with any questions through my website at www.kristinydonovan.com.
