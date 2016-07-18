@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MomsYogaSite</title>
+    <title>AY Yoga</title>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'http://maps.google.com/maps-api-v3/api/js/25/8/common.js' %>
+    <%= javascript_include_tag 'http://maps.google.com/maps-api-v3/api/25/8/util.js' %>
+    <%= javascript_include_tag 'http://maps.google.com/maps-api-v3/api/25/8/stats.js' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
+
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">AY Yoga</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
+
+					<ul class="nav navbar-nav navbar-right">
+
+            <li><a href="/pages/home">Home</a></li>
+						<li><a href="/pages/about">About</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="https://rubyisshiny.tumblr.com" target="_blank">Blog</a></li>
+            <li><a href="/pages/contact">Contact</a></li>
+
+					</ul>
+				</div>
+
+			</div>
+
+	</nav>
+
     <%= yield %>
+
   </body>
 </html>
