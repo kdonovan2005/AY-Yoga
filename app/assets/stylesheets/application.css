@@ -30,7 +30,5 @@
  */
 
 body {
-  background-image: url("http://i.imgur.com/wQxXA7z.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #fff;
 }
