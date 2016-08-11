@@ -1,0 +1,72 @@
+<div class="wrapper">
+
+	<!-- HOME -->
+	<section class="module module-header bg-dark bg-dark-50" data-background="http://i.imgur.com/77PTVtu.jpg" style="background-image: url('http://i.imgur.com/77PTVtu.jpg');">
+
+		<div class="container">
+
+			<!-- MODULE TITLE -->
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<h1 class="module-title font-alt align-center">Classes</h1>
+
+					<div class="module-subtitle font-inc align-center">
+						Inhale the future, exhale the past,<br>Live in the moment.
+					</div>
+
+				</div>
+
+			</div>
+			<!-- /MODULE TITLE -->
+
+		</div>
+
+	</section>
+	<!-- /HOME -->
+
+  <section class="module p-b-0">
+
+		<div class="container">
+
+			<div class="row multi-columns-row post-columns">
+
+				<!-- POST ITEM -->
+        <% @yoga_classes.each do |yoga_class|%>
+				<div class="col-sm-4 col-md-4 col-lg-4">
+					<div class="post">
+						<div class="post-thumbnail">
+							<a href="yoga_classes/<%= yoga_class.id %>"><img src="<%= yoga_class.picture %>" alt="" style="height: 150px; width: auto;"></a>
+						</div>
+						<div class="post-header">
+							<h2 class="post-title font-alt"><a href="yoga_classes/<%= yoga_class.id %>"><%= yoga_class.name %></a></h2>
+							<div class="post-meta font-inc">
+								<% yoga_class.schedules.each do |schedule| %>
+                  | <%= schedule.day %> |
+                <% end %>
+							</div>
+						</div>
+						<div class="post-entry">
+						</div>
+						<!-- <div class="post-more font-inc">
+							<a href="" class="more-link">Sign Up</a>
+						</div> -->
+					</div>
+				</div>
+        <% end %>
+				<!-- /POST ITEM -->
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<div class="align-center">
+
+		<p>Classes are $8, cash only please.<br>Non-transferable 10 punch card, good for one year from date of purchase:  $72.</p>
+
+	</div>
+
+</div>

@@ -1,0 +1,64 @@
+<div class="wrapper">
+
+	<!-- HOME -->
+	<section class="module module-header bg-dark bg-dark-50" data-background="http://i.imgur.com/Vz5cbTF.jpg" style="background-image: url('http://i.imgur.com/Vz5cbTF.jpg');">
+
+		<div class="container">
+
+			<!-- MODULE TITLE -->
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<h1 class="module-title font-alt align-center"><%= @yoga_class.name %></h1>
+
+					<div class="module-subtitle font-inc align-center">
+						Inhale the future, exhale the past,<br>Live in the moment.
+					</div>
+
+				</div>
+
+			</div>
+			<!-- /MODULE TITLE -->
+
+		</div>
+
+	</section>
+
+  <section class="module-small">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-sm-6">
+
+						<div class="work-details">
+							<h3 class="work-details-title font-alt">Description</h3>
+							<ul>
+                <li class="font-inc"><strong>Schedule:</strong></li>
+                  <% @yoga_class.schedules.each do |schedule| %>
+                  <li><%= schedule.day %> | <%= schedule.time %></li>
+                  <% end %>
+							</ul>
+						</div>
+
+					</div>
+
+					<div class="col-sm-6">
+            <%= @yoga_class.description %>
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+  <div class="align-center">
+
+    <p>Classes are $8, cash only please.<br>Non-transferable 10 punch card, good for one year from date of purchase:  $72.</p>
+
+  </div>
+
+</div>
