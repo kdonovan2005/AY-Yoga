@@ -40,7 +40,7 @@
 							<a href="yoga_classes/<%= yoga_class.id %>"><img src="<%= yoga_class.picture %>" alt="" style="height: 150px; width: auto;"></a>
 						</div>
 						<div class="post-header">
-							<h2 class="post-title font-alt"><a href="blog-single.html"><%= yoga_class.name %></a></h2>
+							<h2 class="post-title font-alt"><a href="yoga_classes/<%= yoga_class.id %>"><%= yoga_class.name %></a></h2>
 							<div class="post-meta font-inc">
 								<% yoga_class.schedules.each do |schedule| %>
                   | <%= schedule.day %> |
@@ -58,11 +58,15 @@
 				<!-- /POST ITEM -->
 
 			</div>
-      <p class="align-center">Classes are $8, cash only please.</p>
-      <p class="align-center">Non-transferable 10 punch card, good for one year from date of purchase:  $72.</p>
 
 		</div>
 
 	</section>
+
+	<div class="align-center">
+
+		<p>Classes are $8, cash only please.<br>Non-transferable 10 punch card, good for one year from date of purchase:  $72.</p>
+
+	</div>
 
 </div>

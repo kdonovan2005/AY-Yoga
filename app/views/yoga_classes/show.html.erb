@@ -25,4 +25,40 @@
 
 	</section>
 
+  <section class="module-small">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-sm-6">
+
+						<div class="work-details">
+							<h3 class="work-details-title font-alt">Description</h3>
+							<ul>
+                <li class="font-inc"><strong>Schedule:</strong></li>
+                  <% @yoga_class.schedules.each do |schedule| %>
+                  <li><%= schedule.day %> | <%= schedule.time %></li>
+                  <% end %>
+							</ul>
+						</div>
+
+					</div>
+
+					<div class="col-sm-6">
+            <%= @yoga_class.description %>
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+  <div class="align-center">
+
+    <p>Classes are $8, cash only please.<br>Non-transferable 10 punch card, good for one year from date of purchase:  $72.</p>
+
+  </div>
+
 </div>
