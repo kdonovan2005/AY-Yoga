@@ -1,4 +1,4 @@
-<!-- <div class="wrapper"> -->
+<div class="wrapper">
 
 	<!-- HOME -->
 	<section class="module module-header bg-dark bg-dark-50" data-background="http://i.imgur.com/Vz5cbTF.jpg" style="background-image: url('http://i.imgur.com/Vz5cbTF.jpg');">
@@ -37,9 +37,9 @@
 							<h3 class="work-details-title font-alt">Description</h3>
 							<ul>
                 <li class="font-inc"><strong>Schedule:</strong></li>
-                  @yoga_class.schedules.each do |schedule|
-                  <li>schedule.day | schedule.time </li>
-                	end
+                  <% @yoga_class.schedules.each do |schedule| %>
+                  <li><%= schedule.day %> | <%= schedule.time %></li>
+                  <% end %>
 							</ul>
 						</div>
 
