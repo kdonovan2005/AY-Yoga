@@ -1165,6 +1165,17 @@ Post
 .post-thumbnail {
 }
 
+#class-picture {
+	height: 175px;
+	width: auto;
+	display: block;
+	margin: auto;
+}
+
+.class-info {
+	text-align: center;
+}
+
 .post-images-slider {
 	position: relative;
 }
