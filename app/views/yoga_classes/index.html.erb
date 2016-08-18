@@ -37,11 +37,11 @@
 						<div class="col-sm-6 col-md-4 col-lg-4">
 							<div class="post">
 								<div class="post-thumbnail">
-									<a href="/yoga_classes/<%= yoga_class.id %>"><img src="<%= yoga_class.picture %>" alt="yoga picture" id="class-picture"></a>
+									<a href="/yoga_classes/<%= yoga_class.id %>"><img src="<%= yoga_class.picture %>" alt="yoga picture" id="class-picture" style="height: 175px; width: auto; display: block; margin: auto;"></a>
 								</div>
 								<div class="post-header">
-									<h2 class="post-title font-alt class-info"><a href="/yoga_classes/<%= yoga_class.id %>"><%= yoga_class.name %></a></h2>
-									<div class="post-meta font-inc class-info">
+									<h2 class="post-title font-alt class-info" style="text-align: center;"><a href="/yoga_classes/<%= yoga_class.id %>"><%= yoga_class.name %></a></h2>
+									<div class="post-meta font-inc class-info" style="text-align: center;">
 										<% yoga_class.schedules.each do |schedule| %>
 										| <%= schedule.day %> |
 										<% end %>
