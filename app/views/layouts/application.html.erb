@@ -6,9 +6,6 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'http://maps.google.com/maps-api-v3/api/js/25/8/common.js' %>
-    <%= javascript_include_tag 'http://maps.google.com/maps-api-v3/api/25/8/util.js' %>
-    <%= javascript_include_tag 'http://maps.google.com/maps-api-v3/api/25/8/stats.js' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -32,8 +29,9 @@
 					<ul class="nav navbar-nav navbar-right">
 
             <li><a href="/home">Home</a></li>
-						<li><a href="/pricing">Pricing</a></li>
             <li><a href="/yoga_classes">Classes</a></li>
+						<li><a href="/pricing">Pricing</a></li>
+            <li><a href="/albums">Pictures</a></li>
             <li><a href="/contact">Contact</a></li>
 
 					</ul>

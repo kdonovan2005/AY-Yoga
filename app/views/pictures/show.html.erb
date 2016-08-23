@@ -1,0 +1,31 @@
+<section class="module-small p-t-20 p-b-60">
+
+    <div class="container">
+
+    </div>
+
+    <!-- PORTFOLIO LIST -->
+    <ul id="works-grid" class="works-grid works-grid-gut works-grid-3 works-hover-w" style="position: relative; height: 640.407px;">
+
+
+    <!-- PORTFOLIO ITEM -->
+    <% @album.pictures.each do |picture| %>
+    <li class="work-item illustration webdesign" style="margin-bottom: 10px;">
+      <a href="/albums/<%= @album.id %>/pictures/<%= picture.id %>">
+        <div class="work-image">
+          <img src="<%= picture.name %>" alt="">
+        </div>
+        <div class="work-caption">
+          <h3 class="work-title font-alt"></h3>
+          <div class="work-descr font-inc">
+          </div>
+        </div>
+      </a>
+    </li>
+    <% end %>
+    <!-- /PORTFOLIO ITEM -->
+
+    </ul>
+    <!-- /PORTFOLIO LIST -->
+
+  </section>

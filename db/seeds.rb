@@ -20,3 +20,15 @@ Schedule.create(day: "By Appointment Only", time: "Available Upon Request", yoga
 Schedule.create(day: "By Appointment Only", time: "Available Upon Request", yoga_class_id: 4)
 Schedule.create(day: "By Appointment Only", time: "Available Upon Request", yoga_class_id: 5)
 Schedule.create(day: "By Appointment Only", time: "Available Upon Request", yoga_class_id: 6)
+
+Album.create(name: "First Test", description: "First album test description", cover: "http://i.imgur.com/TqzMtxs.jpg")
+
+Picture.create(name: "http://i.imgur.com/TqzMtxs.jpg", height: 424, width: 636, album_id: 1)
+Picture.create(name: "http://i.imgur.com/TqzMtxs.jpg", height: 424, width: 636, album_id: 1)
+Picture.create(name: "http://i.imgur.com/Ot51Jac.jpg", height: 424, width: 636, album_id: 1)
+Picture.create(name: "http://i.imgur.com/PuvD1ve.jpg", height: 424, width: 636, album_id: 1)
+Picture.create(name: "http://i.imgur.com/77PTVtu.jpg", height: 424, width: 636, album_id: 1)
+Picture.create(name: "http://i.imgur.com/m0Dnbvz.jpg", height: 424, width: 636, album_id: 1)
+Picture.create(name: "http://i.imgur.com/37ifmXS.jpg", height: 424, width: 636, album_id: 1)
+Picture.create(name: "http://i.imgur.com/VMVngli.jpg", height: 424, width: 636, album_id: 1)
+Picture.create(name: "http://i.imgur.com/Tq2ikjX.jpg", height: 424, width: 636, album_id: 1)
