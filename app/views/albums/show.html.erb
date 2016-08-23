@@ -33,7 +33,7 @@
 			<!-- PORTFOLIO ITEM -->
 			<% @album.pictures.each do |picture| %>
 			<li class="work-item" style="margin-top: 10px;">
-				<a href="<%= picture.name %>" class="popup" title="Work 1">
+				<a href="/albums/<%= @album.id %>/pictures/<%= picture.id %>" class="popup" title="Work 1">
 					<div class="work-image">
 						<img src="<%= picture.name %>" alt="">
 					</div>
