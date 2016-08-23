@@ -12,14 +12,14 @@ YogaClass.create(name: "Pranayama", description: "Pranayama is the part of yoga 
 YogaClass.create(name: "Medical Yoga", description: "In coordination with a doctor’s consult, this class is individually designed to help with recovery from illness, injury, disease or surgery.  This class can be done while in a bed, wheelchair, regular chair or on a mat, depending upon the patient’s particular needs.", picture: "http://i.imgur.com/WVCtadY.png")
 YogaClass.create(name: "Child/Youth Yoga", description: "Yoga with young children is done with games, stories and activities that introduce the concepts of yoga:  breathing deeply; quieting the body and mind; stretching and flexibility.  With older youth, the class resembles an adult slow flow class, with emphasis and consideration given to social and emotional developmental stages and needs, such as developing good self-esteem and self-confidence; and body awareness.", picture: "http://i.imgur.com/WVCtadY.png")
 
-Schedule.create(day: "Monday", time: "11am - 12pm", yoga_class_id: 1)
-Schedule.create(day: "Wednesday", time: "12:15pm - 1:15pm", yoga_class_id: 1)
-Schedule.create(day: "Monday", time: "12:15pm - 1:15pm", yoga_class_id: 2)
-Schedule.create(day: "Wednesday", time: "11am - 12pm", yoga_class_id: 2)
-Schedule.create(day: "By Appointment Only", time: "Available Upon Request", yoga_class_id: 3)
-Schedule.create(day: "By Appointment Only", time: "Available Upon Request", yoga_class_id: 4)
-Schedule.create(day: "By Appointment Only", time: "Available Upon Request", yoga_class_id: 5)
-Schedule.create(day: "By Appointment Only", time: "Available Upon Request", yoga_class_id: 6)
+Schedule.create(day: "Monday", time: "11am - 12pm", yoga_class_id: 1, location: "Shangri La Holistic Practices<br>48 Dietz Street, Suite A<br>Oneonta NY 13820")
+Schedule.create(day: "Wednesday", time: "12:15pm - 1:15pm", yoga_class_id: 1, location: "Shangri La Holistic Practices<br>48 Dietz Street, Suite A<br>Oneonta NY 13820")
+Schedule.create(day: "Monday", time: "12:15pm - 1:15pm", yoga_class_id: 2, location: "Shangri La Holistic Practices<br>48 Dietz Street, Suite A<br>Oneonta NY 13820")
+Schedule.create(day: "Wednesday", time: "11am - 12pm", yoga_class_id: 2, location: "Shangri La Holistic Practices<br>48 Dietz Street, Suite A<br>Oneonta NY 13820")
+Schedule.create(day: "By Appointment Only", time: "Available Upon Request", yoga_class_id: 3, location: "By Appointment")
+Schedule.create(day: "By Appointment Only", time: "Available Upon Request", yoga_class_id: 4, location: "By Appointment")
+Schedule.create(day: "By Appointment Only", time: "Available Upon Request", yoga_class_id: 5, location: "By Appointment")
+Schedule.create(day: "By Appointment Only", time: "Available Upon Request", yoga_class_id: 6, location: "By Appointment")
 
 Album.create(name: "Hudson Photo Shoot", description: "Photoshoot at Wave Hill in the Hudson River Valley.", cover: "http://i.imgur.com/TqzMtxs.jpg")
 
