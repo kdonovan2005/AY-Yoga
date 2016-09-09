@@ -1,0 +1,33 @@
+<div class="wrapper">
+
+  <section class="module" style="background-color: rgba(0,0,0, 0.3);">
+
+    <div class="align-center" style="margin-top: -40px;">
+
+      <img src="<%= @picture.name %>" alt="" style="max-height: auto; width: 50%;"/>
+
+    </div>
+
+			<div class="container">
+
+				<div class="pagination font-inc text-uppercase">
+          <% if @picture.id > 1 && @picture.id < @picture.album.pictures.last.id %>
+  					<a href="/albums/<%=@picture.album_id%>/pictures/<%= @picture.id - 1%>"><i class="fa fa-angle-left"></i> Prev</a>
+  					<a href="/albums/<%=@picture.album_id%>">All Pictures</a>
+  					<a href="/albums/<%=@picture.album_id%>/pictures/<%= @picture.id + 1%>">Next <i class="fa fa-angle-right"></i></a>
+          <% elsif @picture.id == 1 %>
+            <a href="/albums/<%=@picture.album_id%>">All Pictures</a>
+            <a href="/albums/<%=@picture.album_id%>/pictures/<%= @picture.id + 1%>">Next <i class="fa fa-angle-right"></i></a>
+          <% elsif @picture.id == @picture.album.pictures.last.id %>
+            <a href="/albums/<%=@picture.album_id%>/pictures/<%= @picture.id - 1%>"><i class="fa fa-angle-left"></i> Prev</a>
+            <a href="/albums/<%=@picture.album_id%>">All Pictures</a>
+          <% end %>
+
+				</div>
+
+			</div>
+
+		</section>
+
+
+</div>

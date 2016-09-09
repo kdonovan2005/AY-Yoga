@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AY Yoga</title>
+    <title>Yoga for Life</title>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'http://maps.google.com/maps-api-v3/api/js/25/8/common.js' %>
-    <%= javascript_include_tag 'http://maps.google.com/maps-api-v3/api/25/8/util.js' %>
-    <%= javascript_include_tag 'http://maps.google.com/maps-api-v3/api/25/8/stats.js' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -24,19 +21,21 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="home">AY Yoga</a>
+          <img src="http://i.imgur.com/I41PKxv.png" style="height: 60px; width: auto;" alt="" />
 				</div>
 
 				<div class="collapse navbar-collapse" id="custom-collapse">
 
 					<ul class="nav navbar-nav navbar-right">
 
-            <li><a href="home">Home</a></li>
-						<li><a href="pricing">Pricing</a></li>
-            <li><a href="classes">Classes</a></li>
-            <li><a href="messages/new">Contact</a></li>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/yoga_classes">Classes</a></li>
+						<li><a href="/pricing">Pricing</a></li>
+            <li><a href="/albums">Pictures</a></li>
+            <li><a href="/contact">Contact</a></li>
 
 					</ul>
+
 				</div>
 
 			</div>
@@ -54,6 +53,8 @@
 
           <div class="col-sm-12 text-center">
             <p class="copyright font-inc m-b-0">© 2016 <a href="index.html">AY Yoga</a>, All Rights Reserved.</p>
+            <p class="copyright font-inc m-b-0" style="font-size: 0.8em">Web design, development and photography by <a href="https://www.kristinydonovan.com" target="_blank">Kristin Donovan</a></p>
+            <p class="copyright font-inc m-b-0" style="font-size: 0.8em">Graphic Design by <a href="https://www.brentjoseph.com" target="_blank">Brent Joseph</a></p>
           </div>
 
         </div>

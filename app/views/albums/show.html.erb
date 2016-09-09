@@ -1,0 +1,53 @@
+<div class="wrapper">
+
+	<!-- HOME -->
+	<section class="module module-header bg-dark bg-dark-50" data-background="<%= @album.cover %>" style="background-image: url('<%= @album.cover %>');">
+
+		<div class="container" style="position: relative; top: -80px;">
+
+			<!-- MODULE TITLE -->
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<h1 class="module-title font-alt align-center"><%= @album.name %></h1>
+
+					<div class="module-subtitle font-inc align-center">
+						<!-- Inhale the future, exhale the past,<br>Live in the moment. -->
+					</div>
+
+				</div>
+
+			</div>
+			<!-- /MODULE TITLE -->
+
+		</div>
+
+	</section>
+
+	<section class="module p-t-0 p-b-0">
+
+		<!-- PORTFOLIO LIST -->
+		<ul id="works-grid" class="works-grid works-grid-gut works-grid-3 works-hover-w" style="position: relative; height: 640.407px;">
+
+			<!-- PORTFOLIO ITEM -->
+			<% @album.pictures.each do |picture| %>
+			<li class="work-item" style="margin-top: 10px;">
+				<a href="/albums/<%= @album.id %>/pictures/<%= picture.id %>" class="popup" title="Work 1">
+					<div class="work-image">
+						<img src="<%= picture.name %>" alt="">
+					</div>
+					<div class="work-caption">
+						<h3 class="work-title font-alt">
+						</h3>
+					</div>
+				</a>
+			</li>
+			<% end %>
+			<!-- /PORTFOLIO ITEM -->
+
+		</ul>
+
+	</section>
+
+</div>
