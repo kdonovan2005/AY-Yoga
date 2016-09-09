@@ -1,10 +1,11 @@
 class MessageMailer < ApplicationMailer
-  default from: {@msg.pluck(:email)}, to: 'kdonovan2005@gmail.com'
+  default from: "AF Yoga <testafyoga@gmail.com>"
+  default to: 'Kristin <kdonovan2005@gmail.com>'
 
-  def message_me(msg)
+  def new_message(msg)
     @msg = msg
 
-    mail(subject: @msg.subject, body: @msg.content)
+    mail subject: "Message from #{msg.name}"
   end
 
 end
