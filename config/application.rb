@@ -12,18 +12,25 @@ module MomsYogaSite
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     config.assets.initialize_on_precompile = false
-    config.action_mailer.perform_deliveries = true
+    config.action_mailer.raise_delivery_errors = true
     config.action_mailer.default_url_options = { :host => "localhost:3000"}
+    config.action_mailer.perform_deliveries = true
+    config.action_mailer.default :charset => "utf-8"
+
+    config.action_mailer.delivery_method = :smtp
 
     config.action_mailer.smtp_settings = {
       address: "smtp.gmail.com",
       port: 587,
       domain: "gmail.com",
-      user_name: ENV["email"],
-      password: ENV["password"],
+      user_name: ENV["EMAIL"],
+      password: ENV["PASSWORD"],
       authentication: :plain,
       # enable_starttls_auto: true
     }
+
+    if Rails.env.development?
+      ENV.update YAML.load(File.read(File.expand_path('../application.yml', __FILE__)))
 
     config.action_mailer.default_url_options = {
       host: "afyoga.com"
