@@ -29,10 +29,6 @@ module MomsYogaSite
       # enable_starttls_auto: true
     }
 
-    if Rails.env.development?
-      ENV.update YAML.load(File.read(File.expand_path('../application.yml', __FILE__)))
-    end
-
     config.action_mailer.default_url_options = {
       host: "afyoga.com"
     }
