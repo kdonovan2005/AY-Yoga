@@ -6,4 +6,5 @@ Rails.application.routes.draw do
     resources :pictures, only: [:show]
   end
   get "/:page" => "pages#show"
+  resources :messages, only: [:new, :create]
 end
