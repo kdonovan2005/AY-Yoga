@@ -4,8 +4,8 @@ class MessagesController < ApplicationController
   end
 
   def create
-    puts "did I get here?"
     @message = Message.new(message_params)
+    puts @message
 
     if @message.valid?
       MessageMailer.new_message(@message).deliver
