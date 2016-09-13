@@ -5,9 +5,9 @@ class MessagesController < ApplicationController
 
   def create
     @message = Message.new(message_params)
-    puts @message
 
     if @message.valid?
+      binding.pry
       MessageMailer.new_message(@message).deliver
       redirect_to root_path, notice: "Your message has been sent. Thank you!"
     else
@@ -19,6 +19,6 @@ class MessagesController < ApplicationController
   private
 
   def message_params
-    params.require(:message).permit(:name, :email, :subject, :content, :commit)
+    params.permit(:name, :email, :subject, :content)
   end
 end

@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   resources :albums, only: [:show, :index] do
     resources :pictures, only: [:show]
   end
-  get "/:page" => "pages#show"
   resources :messages, only: [:new, :create]
+  get "/:page" => "pages#show"
 end

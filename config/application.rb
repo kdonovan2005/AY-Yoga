@@ -26,7 +26,7 @@ module MomsYogaSite
       user_name: ENV["EMAIL"],
       password: ENV["PASSWORD"],
       authentication: :plain,
-      # enable_starttls_auto: true
+      enable_starttls_auto: true
     }
 
     config.action_mailer.default_url_options = {
