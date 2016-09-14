@@ -13,7 +13,7 @@ module MomsYogaSite
     # -- all .rb files in that directory are automatically loaded.
     # config.assets.initialize_on_precompile = false
     config.action_mailer.raise_delivery_errors = true
-    config.action_mailer.default_url_options = { :host => "www.ayyoga.com"}
+    config.action_mailer.default_url_options = { :host => "www.afyoga.com"}
     config.action_mailer.raise_delivery_errors = true;
     config.action_mailer.perform_deliveries = true
     config.action_mailer.default :charset => "utf-8"
