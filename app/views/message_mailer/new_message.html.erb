@@ -1,3 +1,19 @@
-<%= @message.name %> <%= @message.email %> wrote:
-<br>
-<%= @message.content %>
+<div>
+
+  <div>
+    <%= @message.name %> wrote:
+  </div>
+
+  <div>
+    Subject: <%= @message.subject %>
+  </div>
+
+  <div>
+    Message: <%= @message.content %>
+  </div>
+
+  <div>
+    Reply-to Email: <%= @message.eamil %>
+  </div>
+
+</div>
