@@ -1,6 +1,6 @@
 class MessageMailer < ApplicationMailer
-  default from: "AF Yoga <testafyoga@gmail.com>"
-  default to: 'Kristin <kdonovan2005@gmail.com>'
+  default from: "AF Yoga Contact Page <testafyoga@gmail.com>"
+  default to: 'Arlana <afyyoga@gmail.com>'
 
   def new_message(message)
     @message = message
