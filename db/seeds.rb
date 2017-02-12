@@ -14,7 +14,7 @@ YogaClass.create(name: "Child/Youth Yoga", description: "Yoga with young childre
 YogaClass.create(name: "SUNY Oneonta Continuing Education Program", description: "Chair Yoga: A very gentle, beginner's class in which we use the chair for support through all poses, either standing next to the chair or sitting in it.  Emphasis is on exploring range of motion; breathing exercises; and developing greater flexibility.  No mat needed, just comfortable, stretch clothing.  Excellent class for those with injuries, stiffness, or decreased mobility due to surgery; this class can be done in a wheelchair.", picture: "http://i.imgur.com/WVCtadY.png")
 
 Schedule.create(day: "Monday", time: "10am - 11am", yoga_class_id: 2, location: "Shangri La Holistic Practices<br>48 Dietz Street, Suite A<br>Oneonta NY 13820")
-Schedule.create(day: "Monday", time: "11:15am - 12:15pm", yoga_class_id: 2. location: "Shangri La Holistic Practices<br>48 Dietz Street, Suite A<br>Oneonta NY 13820")
+Schedule.create(day: "Monday", time: "11:15am - 12:15pm", yoga_class_id: 2, location: "Shangri La Holistic Practices<br>48 Dietz Street, Suite A<br>Oneonta NY 13820")
 Schedule.create(day: "Wednesday", time: "9:30am - 10:30am", yoga_class_id: 2, location: "Shangri La Holistic Practices<br>48 Dietz Street, Suite A<br>Oneonta NY 13820")
 Schedule.create(day: "Thursday", time: "5:30pm - 6:30pm", yoga_class_id: 7, location: "For location on campus and to enroll by phone, please call (607) 436-2548.<br>For more information, please call (607) 436-3500")
 Schedule.create(day: "By Appointment Only"), time: "Available Upon Request", yoga_class_id: 1, location: "By Appointment")
