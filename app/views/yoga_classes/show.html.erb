@@ -41,10 +41,7 @@
                   <li><%= schedule.day %> | <%= schedule.time %></li>
                   <% end %>
 									<li class="font-inc"><strong>Location:</strong></li>
-										<% @yoga_class.schedules.location.each do |class| %>
-											<li><%= raw class %></li>
-										<% end %>
-
+										<li><%= raw @yoga_class.schedules.location %></li>
 							</ul>
 						</div>
 
