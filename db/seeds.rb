@@ -15,7 +15,7 @@ YogaClass.create(name: "SUNY Oneonta Continuing Education Program", description:
 
 Schedule.create(day: "Monday", time: "10am - 11am", yoga_class_id: 2, location: "Unitarian Universalist church, 12 Ford Ave.")
 Schedule.create(day: "Tuesday", time: "9:30am - 10:30am", yoga_class_id: 1, location: "The Plains, 163 Heritage Circle (game room)")
-Schedule.create(day: "Monday", time: "10am - 11am", yoga_class_id: 7, location: "Moris Center, room 130, SUNY")
+Schedule.create(day: "Wednesday", time: "10am - 11am", yoga_class_id: 7, location: "Moris Center, room 130, SUNY")
 Schedule.create(day: "Thursday", time: "10:30am - 11:30am", yoga_class_id: 2, location: "The Plains, 163 Heritage Circle (education room)")
 # Schedule.create(day: "Monday", time: "11:15am - 12:15pm", yoga_class_id: 2, location: "Shangri La Holistic Practices<br>48 Dietz Street, Suite A<br>Oneonta NY 13820")
 # Schedule.create(day: "Wednesday", time: "9:30am - 10:30am", yoga_class_id: 2, location: "Shangri La Holistic Practices<br>48 Dietz Street, Suite A<br>Oneonta NY 13820")
