@@ -38,12 +38,8 @@
 							<ul>
                 <li class="font-inc"><strong>Schedule:</strong></li>
                 <% @yoga_class.schedules.each do |schedule| %>
-                  <li><%= schedule.day %> | <%= schedule.time %></li>
+                  <li><%= schedule.day %> | <%= schedule.time %> | <%= schedule.location %></li>
                 <% end %>
-								<li class="font-inc"><strong>Location:</strong></li>
-								<% @yoga_class.schedules.each do |schedule| %>
-									<li><%= schedule.location %></li>
-								<% end %>
 							</ul>
 						</div>
 

@@ -17,7 +17,7 @@ Schedule.create(day: "Monday", time: "10am - 11am", yoga_class_id: 2, location: 
 Schedule.create(day: "Tuesday", time: "9:30am - 10:30am", yoga_class_id: 1, location: "The Plains, 163 Heritage Circle (game room)")
 Schedule.create(day: "Wednesday", time: "10am - 11am", yoga_class_id: 7, location: "Moris Center, room 130, SUNY")
 Schedule.created(day: "Wednesday", time: "11:15am-12:15pm", yoga_class_id: 1, location: "Moris Center, room 130, SUNY")
-Schedule.create(day: "Thursday", time: "10:30am - 11:30am", yoga_class_id: 2, location: "The Plains, 163 Heritage Circle (education room)")
+Schedule.create(day: "Thursday", time: "10am - 11am", yoga_class_id: 2, location: "The Plains, 163 Heritage Circle (education room)")
 # Schedule.create(day: "Monday", time: "11:15am - 12:15pm", yoga_class_id: 2, location: "Shangri La Holistic Practices<br>48 Dietz Street, Suite A<br>Oneonta NY 13820")
 # Schedule.create(day: "Wednesday", time: "9:30am - 10:30am", yoga_class_id: 2, location: "Shangri La Holistic Practices<br>48 Dietz Street, Suite A<br>Oneonta NY 13820")
 # Schedule.create(day: "Thursday", time: "5:30pm - 6:30pm", yoga_class_id: 7, location: "For location on campus and to enroll by phone, please call (607) 436-2548.<br>For more information, please call (607) 436-3500")
