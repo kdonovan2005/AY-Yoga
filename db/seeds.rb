@@ -30,7 +30,7 @@ Schedule.create(day: "Saturday", time: "9pm - 10am", yoga_class_id: 3, location:
 # Schedule.create(day: "Wednesday", time: "9:30am - 10:30am", yoga_class_id: 2, location: "Shangri La Holistic Practices<br>48 Dietz Street, Suite A<br>Oneonta NY 13820")
 # Schedule.create(day: "Thursday", time: "5:30pm - 6:30pm", yoga_class_id: 7, location: "For location on campus and to enroll by phone, please call (607) 436-2548.<br>For more information, please call (607) 436-3500")
 # Schedule.create(day: "By Appointment Only", time: "Available Upon Request", yoga_class_id: 1, location: "By Appointment")
-Schedule.create(day: "By Appointment Only", time: "Available Upon Request", yoga_class_id: 3, location: "By Appointment")
+# Schedule.create(day: "By Appointment Only", time: "Available Upon Request", yoga_class_id: 3, location: "By Appointment")
 Schedule.create(day: "By Appointment Only", time: "Available Upon Request", yoga_class_id: 4, location: "By Appointment")
 # Schedule.create(day: "By Appointment Only", time: "Available Upon Request", yoga_class_id: 5, location: "By Appointment")
 Schedule.create(day: "By Appointment Only", time: "Available Upon Request", yoga_class_id: 6, location: "By Appointment")
