@@ -32,7 +32,7 @@ Schedule.create(day: "Saturday", time: "9pm - 10am", yoga_class_id: 3, location:
 # Schedule.create(day: "By Appointment Only", time: "Available Upon Request", yoga_class_id: 1, location: "By Appointment")
 Schedule.create(day: "By Appointment Only", time: "Available Upon Request", yoga_class_id: 3, location: "By Appointment")
 Schedule.create(day: "By Appointment Only", time: "Available Upon Request", yoga_class_id: 4, location: "By Appointment")
-Schedule.create(day: "By Appointment Only", time: "Available Upon Request", yoga_class_id: 5, location: "By Appointment")
+# Schedule.create(day: "By Appointment Only", time: "Available Upon Request", yoga_class_id: 5, location: "By Appointment")
 Schedule.create(day: "By Appointment Only", time: "Available Upon Request", yoga_class_id: 6, location: "By Appointment")
 
 Album.create(name: "Hudson Photo Shoot", description: "Photoshoot at Wave Hill in the Hudson River Valley.", cover: "http://i.imgur.com/TqzMtxs.jpg")
